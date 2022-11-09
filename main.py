@@ -11,7 +11,7 @@ def handler(data, context):
         print(f'A name of length {len(data["name"])} has arrived into the Function.');
 
 
-        # Process the decrypted name value, and re-encrypt the original name using the globally available evervault package.
+        # Process the decrypted name value, and re-encrypt the original name using the encrypt function available in the context parameter.
         # Note all Cages have the evervault SDK automatically injected into their global scope.
         return {
             "message": f'Hello from a Function! It seems you have {len(data["name"])} letters in your name',
