@@ -15,7 +15,7 @@ This Function takes a payload that should contain a `name` key. Running the Func
 
 ### Encrypting at source
 ```python
-// This example uses the Evervault Pyhton SDK.
+# This example uses the Evervault Pyhton SDK.
 import evervault
 
 # Initialize the client with your app's API key
