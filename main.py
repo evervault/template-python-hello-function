@@ -1,7 +1,3 @@
-# The Evervault Python SDK (https://docs.evervault.com/reference/python-sdk) is pre-initialized in 
-# all Functions as the globally-scoped `evervault` object. This allows you to encrypt the result, 
-# and store it in your database.
-
 # `data` is the data you encrypted and passed into `evervault.run` from your server. The Function 
 # automatically decrypts the data and maintains its structure so you can treat event exactly as 
 # you did when you passed it into `evervault.run`.
@@ -12,7 +8,6 @@ def handler(data, context):
 
 
         # Process the decrypted name value, and re-encrypt the original name using the encrypt function available in the context parameter.
-        # Note all Cages have the evervault SDK automatically injected into their global scope.
         return {
             "message": f'Hello from a Function! It seems you have {len(data["name"])} letters in your name',
             "name": f'{context["encrypt"](data["name"])}',
