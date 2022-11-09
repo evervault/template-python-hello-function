@@ -15,7 +15,7 @@ def handler(data, context):
         # Note all Cages have the evervault SDK automatically injected into their global scope.
         return {
             "message": f'Hello from a Function! It seems you have {len(data["name"])} letters in your name',
-            "name": f'{context.encrypt(data["name"])}',
+            "name": f'{context["encrypt"](data["name"])}',
         }
     else:
         print('An empty name has arrived into the Function.');
