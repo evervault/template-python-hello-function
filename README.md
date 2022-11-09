@@ -29,7 +29,7 @@ encrypted = evervault.encrypt({ "name": "Claude" })
 You should encrypt this payload using either our Node SDK, Python SDK, or Browser SDK, then run it in the Hello Function:
 
 ```python
-// Process the encrypted data in a Function
+# Process the encrypted data in a Function
 result = evervault.run("<YOUR_CAGE_NAME>", encrypted)
 ```
 
