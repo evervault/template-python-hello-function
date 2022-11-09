@@ -5,7 +5,7 @@ This is a simple Evervault Function example, to help get you up and running on t
 
 ## Getting started with Evervault
 
-Evervault consists of two parts, encrypting your data at source, using either our Node SDK, or Browser and React SDKs and then sending that encrypted data to a Function to be processed securely.
+Evervault consists of two parts, encrypting your data at source, using either our Node SDK, Python SDK, or Browser and React SDKs and then sending that encrypted data to a Function to be processed securely.
 
 This Function takes a payload that should contain a `name` key. Running the Function is very simple.
 
@@ -15,7 +15,7 @@ This Function takes a payload that should contain a `name` key. Running the Func
 
 ### Encrypting at source
 ```python
-// This example uses the Evervault Node SDK.
+// This example uses the Evervault Pyhton SDK.
 import evervault
 
 # Initialize the client with your app's API key
@@ -26,7 +26,7 @@ encrypted = evervault.encrypt({ "name": "Claude" })
 ```
 
 ### Process your encrypted data in a Function
-You should encrypt this payload using either our Node SDK or Browser SDK, then run it in the Hello Function:
+You should encrypt this payload using either our Node SDK, Python SDK, or Browser SDK, then run it in the Hello Function:
 
 ```python
 // Process the encrypted data in a Function
