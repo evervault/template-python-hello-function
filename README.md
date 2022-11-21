@@ -53,7 +53,7 @@ def handler(data):
         }
 ```
 
-Or check it out in [index.js](./index.js).
+Or check it out in [main.py](./main.py).
 
 --- 
 If you want to know more about Evervault, check out our [documentation](https://docs.evervault.com).
