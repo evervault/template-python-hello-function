@@ -1,5 +1,4 @@
 [function]
 name = "hello-function"
-language = "python@3.11"
+language = "python@3.14"
 handler = "main.handler"
-
