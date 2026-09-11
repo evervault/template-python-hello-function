@@ -1,10 +1,10 @@
-from typing import Any, Dict
+from typing import Any
 
 
 # `data` is the data you encrypted and passed into `evervault.run` from your server. The Function
 # automatically decrypts the data and maintains its structure so you can treat event exactly as
 # you did when you passed it into `evervault.run`.
-def handler(data: Any, context) -> Dict[str, str]:
+def handler(data: Any, context) -> dict[str, str]:
     # Check if the data sent into the Function included the `name` key
     if "name" in data and isinstance(data["name"], str):
         print(f'A name of length {len(data["name"])} has arrived into the Function.')
